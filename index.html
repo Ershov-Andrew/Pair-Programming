@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="public/css/style_new.css" />
+        <!-- Ниже находятся гугл шрифты -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&family=Open+Sans:wght@700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="burger-container">
+                <img class="burger" src="public/icon/menu.svg" alt="Это меню" />
+            </a>
+
+            <a href="#" class="logo-container">
+                <h1 class="logo">Хабр</h1>
+            </a>
+
+            <div class="spacer"></div>
+
+            <a href="#" class="search-container">
+                <img class="search" src="public/icon/search.svg" alt="это поиск" />
+            </a>
+
+            <a href="#" class="login-container">
+                <img class="login" src="public/icon/user.svg" alt="это логин" />
+            </a>
+        </header>
+
+        <section class="article">
+            <div class="article-head">
+                <div class="author-container">
+                    <img class="avatar-author" src="public/img/man.jpg" alt="Мужчина" />
+
+                    <a href="#" class="username">Admin</a>
+
+                    <time class="date"> 23.07.2021 в 21:35 </time>
+                </div>
+                <div class="hat">
+                    <h1 class="title">
+                        Алгоритм для рейтинга комментариев, поощряющий хорошие аргументы
+                    </h1>
+
+                    <div class="article-tags">
+                        <ul class="tags">
+                            <li class="tag"><a href="">Семантика</a></li>
+                            <li class="tag"><a href="">Машинное обучение</a></li>
+                            <li class="tag"><a href="">Социальные сети и сообщества</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="article-content">
+                <p>
+                    Сайты вроде Хабра, Пикабу, Реддита, и Hacker News имеют древовидные системы
+                    комментариев к постам. Зарегистрированные пользователи могут голосовать за
+                    комментарии. Сайты используют рейтинги комментариев двумя способами
+                </p>
+
+                <ul>
+                    <li>
+                        <p>
+                            Управляют вниманием читателей комментариев. "Лучшие" комментарии
+                            отображаются сразу под постом, "худшие" - в подвале. Хабр почти не
+                            управляет вниманием читателей: он лишь блюрит "плохие" комментарии, но
+                            не переупорядочивает их. Впрочем, я (как наверное и многие другие
+                            читатели) часто листаю комментарии только цепляясь взглядом за
+                            двузначное значение рейтинга.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Дают какие-то плюшки авторам "хороших" комментариев. Например, в
+                            некоторых сабреддитах нужно иметь определенный рейтинг комментариев в
+                            данном сабреддите чтобы опубликовать пост.
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    Кроме того, рейтинг комментариев, естественно, влияет на их авторов:
+                    положительный рейтинг поощряет авторов писать больше таких комментариев, а
+                    отрицательный - меньше. Таким образом, рейтинги комментариев еще неявно влияют
+                    на дискуссию на сайте
+                </p>
+                <h3>Как считается рейтинг комментария?</h3>
+                <p>
+                    Любой алгоритм расчета рейтинга комментариев, в конечном счете, отвечает на
+                    вопрос:
+                    <strong>
+                        какие комментарии считаются "хорошими" и достойными внимания, а какие -
+                        "плохими" и не достойными внимания?
+                    </strong>
+                    Простейшая разница голосов отвечает на этот вопрос "демократически": чем больше
+                    человек согласны с комментарием и чем меньше - не согласны, тем комментарий
+                    "лучше" и заслуживает больше внимания. В целом, это же относится и к алгоритму
+                    Реддита.
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="#" class="logo-container">
+                <h1 class="logo">Хабр</h1>
+            </a>
+
+            <div class="social-media">
+                <a href="#" class="facebook">
+                    <img src="public/icon/facebook.png" alt="facebook" />
+                </a>
+
+                <a href="#" class="linkedin">
+                    <img src="public/icon/linkedin.png" alt="linkedin" />
+                </a>
+
+                <a href="#" class="tumblr">
+                    <img src="public/icon/tumblr.png" alt="tumblr" />
+                </a>
+
+                <a href="#" class="twitter">
+                    <img src="public/icon/twitter.png" alt="twitter" />
+                </a>
+
+                <a href="#" class="whats-app">
+                    <img src="public/icon/whatsapp.png" alt="whatsapp" />
+                </a>
+            </div>
+
+            <div class="menu">
+                <div class="menu-item">
+                    <a href="#" class="button">Настройка языка</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="button">О сайте</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="button">Техническая поддержка</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="button">Полная версия</a>
+                </div>
+                <div class="menu-item">
+                    <a href="#" class="button">Вернуться на старую версию</a>
+                </div>
+            </div>
+
+            <div class="end">
+                <p>© 2006–2021 «Habr»</p>
+            </div>
+        </footer>
+    </body>
+</html>

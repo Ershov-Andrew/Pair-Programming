@@ -1,0 +1,25 @@
+h1.one {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    color: red;
+    /* font-family: ; */
+}
+
+.my-class-1 {
+    color: green;
+}
+
+div.my-class-1 {
+    color: blue;
+}
+
+/* #my-id {
+    color: yellow;
+} */
+
+hr {
+    width: 100%;
+    border-width: 1px;
+}
